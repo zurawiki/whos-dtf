@@ -1,0 +1,24 @@
+<template name="user">
+    <div class="pad">
+        <a href="/"><h4>&lt; Back</h4></a>
+
+        <h2><a href="tel:+1{{username}}">{{tele}}</a></h2>
+
+        <h4>How about we Uber&trade; over there?</h4>
+
+        {{#each uber}}
+        <p>{{display_name}} | {{estimate}}</p>
+        {{else}}
+        <p>UberX | $10, about 6 min</p>
+
+        <p>UberXL | $14-15, about 4 min</p>
+
+        <p>UberBLACK | $15, about 7 min</p>
+
+        <p>UberX | $25, about 4 min</p>
+
+        <p>Taxi | Metered, about 16 min</p>
+        {{/each}}
+
+    </div>
+</template>

@@ -1,0 +1,19 @@
+<template name="home">
+    <header>
+        <span class="brand">Who's DTF?</span>
+
+        <div class="user">{{> loginButtons}}</div>
+    </header>
+
+    {{> map}}
+
+    <footer>
+        <input id="horny" type="range" min="0" max="10" value="{{quant}}">
+        <span id="num" class="num-{{quant}}">{{quant}}</span>
+    </footer>
+
+</template>
+
+<template name="map">
+    <div id="map"></div>
+</template>

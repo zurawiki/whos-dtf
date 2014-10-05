@@ -1,0 +1,277 @@
+.gm-sm {
+    display: none !important;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #ebebeb;
+    background-color: #2b3e50;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+header {
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2b3e50;
+    z-index: 1000;
+    padding: 5px 0;
+    padding-top: 20px
+
+}
+
+footer {
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #2b3e50;
+    z-index: 1000;
+}
+
+#map {
+    position: fixed;
+}
+
+.brand {
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 1em;
+    color: white;
+}
+
+.user {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+#login-dropdown-list {
+    width: 90px !important;
+}
+
+#login-buttons-open-change-password {
+    display: none;
+}
+
+#horny {
+    width: 260px;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+#num {
+    font-size: 28px;
+}
+
+#iron-router-progress {
+    background-color: #acbed0;
+    box-shadow: 0 0 5px #acbed0;
+}
+
+.num-0 {
+    opacity: 0.7;
+}
+
+.num-5 {
+    color: pink;
+}
+
+.num-7, .num-6 {
+    font-weight: 500;
+    color: pink;
+}
+
+.num-8 {
+    font-weight: 600;
+    color: pink;
+}
+
+.num-9 {
+    font-weight: 600;
+    color: hotpink;
+}
+
+.num-10 {
+    font-weight: 900;
+    color: deeppink;
+}
+
+.pad {
+    padding: 0 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue-Light", "Helvetic Neue", sans-serif;
+
+}
+
+input[type=tel] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 100%;
+    width: calc(100% - 20px);
+    height: 50px;
+    padding: 0 10px 0;
+    margin: 0 0 10px;
+    line-height: 40px;
+    font-size: 17px;
+    border: 0;
+}
+
+.btn {
+    -webkit-user-select: none;
+    background-clip: border-box;
+    background: rgb(223, 105, 26) none scroll;
+    background-origin: padding-box;
+    background-size: auto;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 300;
+    height: 50px;
+    line-height: 25.2700004577637px;
+    margin-bottom: 0px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.pad h1 {
+    font-weight: 200;
+    font-size: 72px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.pad h2 {
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+input[type=range] {
+    background: #2b3e50;
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid #2b3e50;
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: mediumpurple;
+    margin-top: -8px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+input[type=range]::-moz-range-track {
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: mediumpurple;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+    outline: 1px solid #2b3e50;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    height: 20px;
+    background: #ddd;
+    border: none;
+    border-radius: 10px;
+    /*remove default tick marks*/
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    outline: none;
+    background: #ddd;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: mediumpurple;
+}
+
+input[type=range]:focus::-ms-track {
+    background: #ddd;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #ddd;
+}
+
+.pad a {
+    color: lightblue;
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none !important;
+}
